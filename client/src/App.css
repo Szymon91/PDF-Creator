@@ -1,0 +1,75 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  width: 100%;
+}
+
+textarea {
+  width: 100% !important;
+  resize: none;
+  min-height: 300px;
+}
+
+.newDocument {
+  border: 2px solid rgb(4, 4, 48);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.date {
+  margin: 10px 10px 30px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.personalData {
+  display: flex;
+  flex-direction: column;
+}
+
+.personalData input {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.documentName {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.description {
+  padding: 10px;
+}
+
+button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  min-height: 40px;
+  max-width: 150px;
+  background-color: rgb(45, 45, 167);
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  input {
+    max-width: 200px;
+  }
+
+  .personalData input {
+    max-width: 250px;
+  }
+
+  .newDocument {
+    width: 60%;
+    min-width: 600px;
+    margin-top: 70px;
+  }
+}
